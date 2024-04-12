@@ -1162,6 +1162,51 @@ body {
 }
 /* End faq section */
 
+/* Start company section */
+.company-section {
+  background-color: #0643a2;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.inner-company-section {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.company-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.company-card img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.company-text {
+  margin-left: 5px;
+}
+
+.company-card h2 {
+  color: #fff;
+}
+
+.company-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* End company section */
+
 @media screen and (min-width: 576px) {
   .header {
     position: absolute;
@@ -1693,4 +1738,10 @@ body {
     max-height: 450px;
   }
   /* End faq section */
+
+  /* Start company section */
+  .inner-company-section {
+    width: 1024px;
+  }
+  /* End company section */
 }
