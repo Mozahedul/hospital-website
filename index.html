@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hospital Template</title>
+  </head>
+  <body>
+    <!-- START Top Header -->
+    <div class="mobile-menu">
+      <a href="/">
+        <img src="./images/logo.PNG" alt="site log for mobile" />
+      </a>
+      <button id="menu-open">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button id="menu-close" class="btn-close">
+        <i class="fa-solid fa-close"></i>
+      </button>
+    </div>
+    <section id="menu" class="header">
+      <section class="top-header">
+        <div class="inner-top-header">
+          <!-- Left part of the top header -->
+          <div class="top-header-left">
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              Address: 92 Bowery St., New York, NY 10013
+            </span>
+            <span>
+              <i class="fa-solid fa-envelope"></i> Email: demo@example.com
+            </span>
+            <span>
+              <i class="fa-solid fa-clock"></i>
+              Office Open: 9.00 am - 8.00 pm
+            </span>
+          </div>
+
+          <!-- Top header right -->
+          <div class="top-header-right">
+            <div>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="login-register">
+              <a href="#">
+                <button>
+                  <i class="fa-solid fa-user"></i>
+                  login/register
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END top Header -->
+
+      <!-- START Bottom header -->
+      <section class="navigation-menu">
+        <div class="inner-navigation-menu">
+          <!-- Site Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="/images/logo.PNG" alt="site logo" />
+            </a>
+          </div>
+          <!-- Navigation Menu -->
+          <div class="nav-menu">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Departments</a>
+              </li>
+              <li>
+                <a href="#">Doctor</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Timetable</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Search and appointment -->
+          <div class="search-appointment">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+            <button><i class="fa-solid fa-arrows-to-dot"></i></button>
+            <div>
+              <a href="#">
+                <button class="appointment-btn">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  <span> Appointment </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Bottom header -->
+    </section>
+
+    <!-- Starts Hero image with banner -->
+    <section class="hero-img">
+      <!-- <div class="blur-bg-hero-img"> -->
+      <div class="hero-img-content">
+        <h1>
+          The Hospital of <br />
+          Future Today
+        </h1>
+        <p>We are the best medical in the family & health</p>
+        <button>More Service</button>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- ends Hero image with banner -->
+
+    <!-- Start Booking Section -->
+    <section class="booking">
+      <div class="inner-booking-section">
+        <!-- Left section -->
+        <div class="inner-booking-left">
+          <div class="icon-booking">
+            <div class="icon-booking-left">
+              <img src="./icons/images/image_03.png" alt="watch logo" />
+            </div>
+            <div class="request-appointment">
+              <h3>
+                Request <br />
+                Appointment
+              </h3>
+              <a href="#">Booking Now</a>
+            </div>
+          </div>
+          <div class="booking-left-img">
+            <img src="./images/women/girl-doc-03.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Right section -->
+        <div class="inner-booking-left">
+          <div class="icon-booking">
+            <div class="icon-booking-left">
+              <img src="./icons/images/image_03.png" alt="watch logo" />
+            </div>
+            <div class="request-appointment">
+              <h3>
+                Request <br />
+                Appointment
+              </h3>
+              <a href="#">Booking Now</a>
+            </div>
+          </div>
+          <div class="booking-left-img">
+            <img src="./images/women/girl-doc-06.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Booking Section -->
+
+    <!-- START Medical care -->
+    <section class="medical-care">
+      <div class="inner-medical-care">
+        <!-- Content section -->
+        <div class="medical-care-content">
+          <p class="medical-care-subtitle">
+            Medical And General Practice Care!
+          </p>
+          <h3 class="medical-care-title">
+            Providing Medical Care For The <br />
+            In Our Health Service.
+          </h3>
+        </div>
+
+        <!-- Card seciton -->
+        <div class="medical-card-container">
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-02.jpg" alt="" />
+              <div class="clinic-icon">
+                <img src="./icons/clinic/image_03_03.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Neurology Clinic</h3>
+              <p>
+                We are give best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+              <div class="read-more-btn">
+                <button type="button">Read More</button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-06.jpg" alt="" />
+              <div class="clinic-icon icon-pathology">
+                <img src="./icons/clinic/image_03_05.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Pathology Clinic</h3>
+              <p>
+                We are give best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+
+              <div class="read-more-btn">
+                <button type="button" class="read-more-pathology-btn">
+                  Read More
+                </button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-05.jpg" alt="" />
+              <div class="clinic-icon">
+                <img src="./icons/clinic/image_03_03.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Laboratory Analysis</h3>
+              <p>
+                We are give best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+              <div class="read-more-btn">
+                <button type="button">Read More</button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-01.jpeg" alt="" />
+              <div class="clinic-icon">
+                <img src="./icons/clinic/image_03_12.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Padiatric Clinic</h3>
+              <p>
+                We are giving best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+              <div class="read-more-btn">
+                <button type="button">Read More</button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-03.jpg" alt="" />
+              <div class="clinic-icon">
+                <img src="./icons/clinic/image_03_13.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Cardiac Clinic</h3>
+              <p>
+                We are give best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+              <div class="read-more-btn">
+                <button type="button">Read More</button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/consult/consult-04.jpg" alt="" />
+              <div class="clinic-icon">
+                <img src="./icons/clinic/image_03_14.png" alt="" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Opthalmology Analysis</h3>
+              <p>
+                We are give best quality health service & facility of latest
+                technology so patient surgery easy & secure.
+              </p>
+              <div class="read-more-btn">
+                <button type="button">Read More</button>
+                <img src="./icons/images/image_10.png" alt="read more button" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Medical care -->
+
+    <!-- Start About us section -->
+    <section class="about-us-container">
+      <div class="about-us-img">
+        <img src="./images/operation-theater/ot-04.png" alt="" />
+        <img src="./images/men/man-doc-07.png" alt="" />
+      </div>
+      <div class="about-us-content">
+        <p class="about-us-subtitle">More About Us</p>
+        <h2 class="about-us-title">
+          We Offering Healthcare <br />
+          About to Clinic
+        </h2>
+        <p class="about-us-text">
+          A wonderful serenity has taken possession of my entire soul, like
+          these sweet mornings of spring which I enjoy with my whole heart.
+          available, what if any plea bargains may be offered to you.
+          <br />
+          We created ready has taken possession of my entire soul, like these
+          real state, corporate risk practices. mornings of spring.
+        </p>
+        <div class="about-us-quote">
+          <span class="about-us-quote-icon">
+            <i class="fa-solid fa-quote-left"></i>
+          </span>
+          <span class="about-us-quote-text">
+            I am alone, and feel the charm of existence in which was real
+            estate, medical.
+          </span>
+        </div>
+        <div class="more-about">
+          <button>
+            <i class="fa-solid fa-calendar-days"></i>
+            More About
+          </button>
+          <div class="ceo-founder">
+            <img src="./images/woman-about.png" alt="" />
+            <div class="about-identity">
+              <span>Dr Zason Jak</span>
+              <h4>Ceo-Founder</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ends About us section -->
+
+    <!-- Start work section -->
+    <section class="work-container">
+      <div class="work-inner-section">
+        <div class="work-header">
+          <span>Working Process</span>
+          <h2>How we work?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="work-four-card">
+          <div class="work-card">
+            <div class="card-dotted-border">
+              <img src="./images/women/girl-doc-05.jpg" alt="" />
+            </div>
+            <div class="work-card-content">
+              <h3>Appointment</h3>
+              <p>
+                Why Cardioly service is best for the <br />
+                types of patients
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-dotted-border">
+              <img src="./images/men/man-doc-07.png" alt="" />
+            </div>
+            <div class="work-card-content">
+              <h3>Expert Doctor</h3>
+              <p>
+                Why Cardioly service is best for the <br />
+                types of patients
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-dotted-border">
+              <img src="./images/women/girl-doc-02.jpg" alt="" />
+            </div>
+            <div class="work-card-content">
+              <h3>Consultation</h3>
+              <p>
+                Why Cardioly service is best for the <br />
+                types of patients
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-dotted-border border-thick">
+              <img src="./images/men/man-doc-01.jpg" alt="" />
+            </div>
+            <div class="work-card-content">
+              <h3>Enjoy Life</h3>
+              <p>
+                Why Cardioly service is best for the <br />
+                types of patients
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End work section -->
+
+    <!-- Start Choose us section -->
+    <section class="choose-us-container">
+      <div class="inner-section-choose-us">
+        <div class="choose-us-heading">
+          <span>Why Choose Us?</span>
+          <h3>
+            We Have Patients Being <br />
+            Monitored by Doctors!
+          </h3>
+        </div>
+        <p class="choose-us-descr">
+          Quis ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+          tempor incididunt ut et dolore magna aliqua ipsum ultrices gravida
+          risus modo viverra mae cenas accumsan lacus vel.
+        </p>
+      </div>
+      <div class="more-choose">
+        <div class="more-choose-left">
+          <img src="./images/operation-theater/ot-08.jpg" alt="" />
+          <a target="_blank" href="https://youtu.be/UrwwvLzWG0U"
+            ><i class="fa-solid fa-play"></i
+          ></a>
+        </div>
+        <div class="more-choose-right">
+          <div>
+            <h2>How it works?</h2>
+            <p>
+              We're here to care for you and your entire family, Regular visits
+              to the doctor will depend on your age and general health!
+            </p>
+          </div>
+          <div class="work-conditions">
+            <div class="condition-check">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Fitness Guidance to Patient.</span>
+            </div>
+            <div class="condition-check">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Building a healthy environment.</span>
+            </div>
+            <div class="condition-check">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Diabetes & blood pressor check up.</span>
+            </div>
+            <div class="condition-check">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Handle patient body in MRI.</span>
+            </div>
+            <div class="condition-check">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Excellence in Healthcare every.</span>
+            </div>
+          </div>
+          <div class="more-choose-btn">
+            <button>More Choose</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Performance section -->
+    <section class="performance-container">
+      <div class="inner-performance-section">
+        <div class="performance-card">
+          <img src="./icons/images/image_18.png" alt="performance" />
+          <h4>Happy Clients</h4>
+        </div>
+        <div class="performance-card">
+          <img src="./icons/images/image_18.png" alt="performance" />
+          <h4>Medicale Clinic</h4>
+        </div>
+        <div class="performance-card">
+          <img src="./icons/images/image_18.png" alt="performance" />
+          <h4>Country Cover</h4>
+        </div>
+        <div class="performance-card">
+          <img src="./icons/images/image_18.png" alt="performance" />
+          <h4>Project Done</h4>
+        </div>
+      </div>
+    </section>
+    <!-- End performance section -->
+
+    <!-- Start team member section -->
+    <section class="team-member-container">
+      <div class="inner-member-section">
+        <span>Team Members</span>
+        <h3>Meet Our Doctors</h3>
+      </div>
+    </section>
+    <!-- End Team member section -->
+
+    <!-- End Choose us section -->
+
+    <!-- Start Three column team member -->
+    <section class="member-identity-container">
+      <div class="inner-member-identity">
+        <div class="member-card">
+          <img src="./images/men/man-doc-04.png" alt="" />
+          <div class="member-content">
+            <h3>Dr. Soldone Jak</h3>
+            <p class="member-title">Cardiology specialist</p>
+            <p class="member-descr">
+              Medical dolor sit amet. consectetur cing elit. sed do eiusmod
+              Medical dolor sit amet consectetur.
+            </p>
+            <div class="member-social-media">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tumblr"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member-card">
+          <img src="./images/women/girl-doc-07.png" alt="" />
+          <div class="member-content">
+            <h3>Dr. William Harpes</h3>
+            <p class="member-title">Cardiology specialist</p>
+            <p class="member-descr">
+              Medical dolor sit amet. consectetur cing elit. sed do eiusmod
+              Medical dolor sit amet consectetur.
+            </p>
+            <div class="member-social-media">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tumblr"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member-card">
+          <img src="./images/men/man-doc-05.png" alt="" />
+          <div class="member-content">
+            <h3>Dr. Derek Johnson</h3>
+            <p class="member-title">Cardiology specialist</p>
+            <p class="member-descr">
+              Medical dolor sit amet. consectetur cing elit. sed do eiusmod
+              Medical dolor sit amet consectetur.
+            </p>
+            <div class="member-social-media">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tumblr"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End three column team member -->
+
+    <!-- Start medical gallery section -->
+    <section class="medical-gallery-container">
+      <div class="inner-medical-gallery">
+        <!-- Header -->
+        <div class="gallery-header">
+          <p>Why Choose Us</p>
+          <h2>
+            Successful medical galleries <br />
+            of the clinic
+          </h2>
+        </div>
+
+        <!-- Images -->
+        <div class="medical-gallery-images">
+          <div class="gallery-img">
+            <img src="./images/women/girl-doc-04.png" alt="" />
+          </div>
+          <div class="gallery-img gallery-text-overlay">
+            <img src="./images/women/girl-doc-001.jpg" alt="" />
+            <div class="overlay-text">
+              <p>Medical facility</p>
+              <h4>
+                Medical Advices <br />
+                & Checkups
+              </h4>
+              <button type="button" class="overlay-text-btn">-></button>
+            </div>
+          </div>
+          <div class="gallery-img">
+            <img src="./images/operation-theater/ot-09.png" alt="" />
+          </div>
+          <div class="gallery-img">
+            <img src="./images/men/man-doc-06.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Medical gallery section -->
+
+    <!-- Start faq section -->
+    <section class="faq-container">
+      <div class="faq-inner-container">
+        <div class="faq-left">
+          <div class="faq-header">
+            <p class="faq-subtitle">faq</p>
+            <h1 class="faq-title">
+              Frequently Asked <br />
+              Questions
+            </h1>
+          </div>
+          <div class="faq-accordion">
+            <button class="btn">
+              <span> 01. You Need A Medical Service?</span>
+              <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, voluptatem quam? Quidem, nobis in pariatur sint
+              porro consectetur est esse.
+            </div>
+
+            <button class="btn">
+              <span> 02. Medical Service A Scam? </span
+              ><i class="fas fa-plus icon"></i>
+            </button>
+            <div class="details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, voluptatem quam? Quidem, nobis in pariatur sint
+              porro consectetur est esse.
+            </div>
+
+            <button class="btn">
+              <span> 03. Out Of Your Medical Service? </span
+              ><i class="fas fa-plus icon"></i>
+            </button>
+            <div class="details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, voluptatem quam? Quidem, nobis in pariatur sint
+              porro consectetur est esse.
+            </div>
+            <button class="btn">
+              <span>04. The Sound Of Medical?</span>
+              <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, voluptatem quam? Quidem, nobis in pariatur sint
+              porro consectetur est esse.
+            </div>
+            <button class="btn">
+              <span> 05. Sound Of Medical Service?</span>
+              <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, voluptatem quam? Quidem, nobis in pariatur sint
+              porro consectetur est esse.
+            </div>
+          </div>
+        </div>
+        <div class="faq-right">
+          <img src="./images/men/man-doc-03.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End faq section -->
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore natus
+    laboriosam perspiciatis magni tempora nesciunt aliquam, ipsa adipisci
+    asperiores maiores nobis nostrum eum similique atque dolor incidunt.
+    Asperiores, ducimus commodi odit magnam possimus optio. Repudiandae nostrum,
+    recusandae vero vel velit ad eligendi ut, eos qui quod amet impedit corporis
+    fuga.
+    <script src="./main.js"></script>
+    <script src="./accordion.js"></script>
+  </body>
+</html>

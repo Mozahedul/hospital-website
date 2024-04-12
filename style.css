@@ -1,0 +1,1696 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STARTS TOP HEADER */
+
+/* Mobile menu showing */
+.mobile-menu {
+  visibility: visible;
+  opacity: 1;
+  /* position: relative; */
+  width: 100%;
+}
+
+.mobile-menu .btn-close {
+  display: none;
+}
+
+.mobile-menu img {
+  width: 100%;
+  max-width: 120px;
+  min-width: 100px;
+}
+
+.mobile-menu button {
+  position: absolute;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.mobile-menu button:hover {
+  background-color: #0643a2;
+  color: #fff;
+}
+
+.header {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  /* right: 0; */
+  position: absolute;
+  transition: 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-header {
+  background-color: #0643a2;
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
+
+.inner-top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.top-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 12px;
+}
+
+.top-header-left span {
+  margin-right: 10px;
+  line-height: 20px;
+}
+
+.top-header-left span i {
+  color: #00d1c2;
+}
+
+.top-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.login-register {
+  margin-top: 15px;
+}
+
+.top-header-right a {
+  color: #fff;
+  background-color: #0e0e0e48;
+  padding: 6px 8px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 3px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.top-header-right a:hover {
+  background-color: #00d1c2;
+}
+
+.login-register {
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-register a {
+  text-decoration: none;
+}
+
+.login-register a button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-register > a > i {
+  font-size: 20px;
+  color: #00d1c2;
+  padding-right: 5px;
+}
+
+/* END TOP HEADER */
+
+/* Start Navigation menubar */
+.navigation-menu {
+  background-color: #0643a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.inner-navigation-menu {
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.logo {
+  display: none;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  min-width: 50px;
+  height: auto;
+}
+
+/* START Navigation menu */
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu ul li {
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 4px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.nav-menu ul li:hover {
+  background-color: #00d1c2;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+/* END Navigation menu */
+
+/* Seach and appointment */
+.search-appointment {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.search-appointment > button {
+  margin-right: 15px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+
+.appointment-btn {
+  padding: 8px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #00d1c2;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  outline: none;
+  border: none;
+}
+
+.appointment-btn:hover {
+  background-color: #0643a2;
+}
+
+.appointment-btn i {
+  padding-right: 8px;
+}
+
+/* ===== Start Hero Image styling ===== */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/operation-theater/ot-06.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+  /* padding-left: 15px; */
+  /* overflow-x: hidden; */
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  background: rgb(6, 67, 162);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(6, 67, 162, 0.1516981792717087) 0%,
+    rgba(6, 67, 162, 1) 97%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(6, 67, 162, 0.1516981792717087) 0%,
+    rgba(6, 67, 162, 1) 97%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(6, 67, 162, 0.1516981792717087) 0%,
+    rgba(6, 67, 162, 1) 97%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0643a2",endColorstr="#0643a2",GradientType=1);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-img-content {
+  z-index: 8888;
+}
+
+.hero-img-content h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.hero-img-content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.hero-img-content button {
+  outline: none;
+  border: none;
+  background-color: #00d1c2;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.hero-img-content button:hover {
+  background-color: #fff;
+  color: #00d1c2;
+}
+/* ==== End Hero Image styling ==== */
+
+/* START Booking Section */
+.booking {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  margin-top: 30px;
+}
+
+.inner-booking-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-booking-left {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  border-radius: 12px;
+  box-shadow: -3px 3px 8px rgba(192, 192, 192, 0.5);
+  margin-bottom: 15px;
+}
+
+.icon-booking {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.request-appointment {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.request-appointment h3 {
+  font-size: 16px;
+}
+
+.request-appointment a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00d1c2;
+}
+
+.icon-booking-left {
+  margin-right: 5px;
+}
+
+.icon-booking-left img {
+  width: 100%;
+  max-width: 80px;
+  min-width: 40px;
+  height: auto;
+}
+
+.booking-left-img {
+  width: 50%;
+}
+
+.booking-left-img img {
+  width: 100%;
+  /* max-width: 260px; */
+  height: 100%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* END Booking Section */
+
+/* Start Medical care section */
+.medical-care {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.inner-medical-care {
+  /* background-color: red; */
+  width: 100%;
+  padding: 15px 0;
+}
+
+.medical-care-subtitle {
+  font-size: 16px;
+  color: #00d1c2;
+  text-align: center;
+  font-weight: 400;
+}
+
+.medical-care-title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.medical-card-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  /* column-gap: 10px; */
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px 3px #eeeeee;
+}
+
+.card-img {
+  position: relative;
+}
+
+.clinic-icon {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.icon-pathology {
+  background-color: #0643a2;
+}
+
+.clinic-icon img {
+  max-width: 43px;
+  min-width: 43px;
+}
+
+.card-img img {
+  width: 100%;
+  /* max-width: 366px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 6px;
+}
+
+.read-more-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 10px;
+  /* align-self: flex-end; */
+}
+
+.read-more-btn button {
+  outline: none;
+  border: none;
+  background-color: #00d1c2;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.read-more-btn .read-more-pathology-btn {
+  background-color: #0643a2;
+}
+
+.read-more-btn img {
+  width: 100%;
+  max-width: 90px;
+}
+/* End Medical care section */
+
+/* Start About us section */
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-img {
+  width: 100%;
+  position: relative;
+}
+
+.about-us-img img:nth-child(1) {
+  width: 100%;
+}
+
+.about-us-img img:nth-child(2) {
+  width: 100%;
+  max-width: 120px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.about-us-content {
+  width: 100%;
+  padding: 15px;
+  align-self: center;
+}
+
+.about-us-content .about-us-subtitle {
+  font-size: 16px;
+  color: #00d1c2;
+  font-weight: 600;
+}
+
+.about-us-content .about-us-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.about-us-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  color: rgb(116, 116, 116);
+}
+
+.about-us-quote {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.about-us-quote .about-us-quote-icon {
+  font-size: 42px;
+  color: #00d1c2;
+  padding-right: 15px;
+}
+
+.about-us-quote .about-us-quote-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.more-about {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* background-color: red; */
+  margin-top: 30px;
+}
+
+.more-about button {
+  outline: none;
+  border: none;
+  background-color: #00d1c2;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.ceo-founder {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.ceo-founder img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 40px;
+  border: 5px solid white;
+}
+
+.about-identity {
+  margin-left: 8px;
+}
+
+.about-identity span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-identity h4 {
+  color: #00d1c2;
+}
+/* End About us section */
+
+/* Start work container */
+.work-container {
+  background-color: #0643a2;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.work-header {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-header span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00d1c2;
+}
+
+.work-header h2 {
+  color: #fff;
+  margin-top: 5px;
+}
+
+.work-header p {
+  font-size: 14px;
+  color: #e9e9e9;
+  margin-top: 15px;
+  max-width: 450px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.work-four-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.work-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-dotted-border {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: stretch;
+  padding: 12px;
+  border: 1px dashed #00d1c380;
+  border-radius: 100px;
+}
+
+.border-thick {
+}
+
+.card-dotted-border img {
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.work-card-content h3 {
+  font-size: 22px;
+  color: #fff;
+}
+
+.work-card-content p {
+  text-align: center;
+  color: #ececec;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* End work container */
+
+/* Start choose us container */
+.choose-us-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.inner-section-choose-us {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.choose-us-heading {
+  width: 100%;
+}
+
+.choose-us-heading span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00d1c2;
+}
+
+.choose-us-heading h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: #242424;
+}
+
+.choose-us-descr {
+  margin-top: 8px;
+}
+
+.inner-us-descr {
+  font-size: 13px;
+  width: 100%;
+}
+
+.more-choose {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.more-choose-left {
+  position: relative;
+}
+
+.more-choose-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.more-choose-left > a {
+  text-decoration: none;
+  background-color: #0643a2;
+  color: #fff;
+  padding: 15px 18px;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 8888;
+  transition: 0.5s ease-in-out;
+}
+
+.more-choose-left > a:hover {
+  text-decoration: none;
+  background-color: #0642a2b0;
+}
+
+.more-choose-right {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.more-choose-right p {
+  margin-top: 8px;
+}
+
+.more-choose-btn {
+  margin-top: 20px;
+}
+
+.more-choose-btn button {
+  outline: none;
+  border: none;
+  background-color: #00d1c2;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.work-conditions {
+  margin-top: 20px;
+}
+
+.condition-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.condition-check > i {
+  color: #00d1c2;
+}
+
+.condition-check > span {
+  padding-left: 8px;
+}
+/* End choose us container */
+
+/* Start Performance section */
+.performance-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+.inner-performance-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin-top: 40px; */
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 30px 0;
+  justify-content: space-between;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 0 15px 2px rgba(218, 218, 218, 0.5);
+}
+
+.performance-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  margin-bottom: 30px;
+}
+
+.performance-card img {
+  width: 100%;
+  max-width: 145px;
+}
+
+.work-card {
+  width: 48%;
+  margin-bottom: 15px;
+}
+/* End performance section */
+
+/* Start team member sectoin */
+.team-member-container {
+  background-image: url("./images/operation-theater/ot-02.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px;
+  z-index: -1;
+}
+
+.team-member-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inner-member-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9874;
+}
+
+.inner-member-section span,
+.inner-member-section h3 {
+  color: #f1f1f1;
+  font-size: 22px;
+  text-align: center;
+}
+
+.inner-member-section h3 {
+  font-size: 32px;
+}
+/* End team member section */
+
+/* Start team member three column seciton */
+.member-identity-container {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  margin-top: -100px;
+}
+
+.inner-member-identity {
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(167, 167, 167, 0.5);
+  margin-bottom: 15px;
+}
+
+.member-card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.member-content {
+  padding: 15px;
+}
+
+.member-content .member-title {
+  color: #00d1c2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.member-content .member-descr {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.member-content .member-social-media {
+  margin-top: 20px;
+}
+
+.member-content .member-social-media a {
+  text-decoration: none;
+  color: #000;
+}
+
+.member-content .member-social-media a i {
+  /* background-color: red; */
+  border: 1px solid rgb(238, 238, 238);
+  padding: 6px 4px;
+  width: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.4s ease-in-out;
+}
+
+.member-content .member-social-media a i:hover {
+  background-color: #00d1c2;
+  color: #fff;
+}
+/* End team member three column section */
+
+/* Start medical gallery header */
+.medical-gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+}
+
+.gallery-header {
+  text-align: center;
+}
+
+.gallery-header p {
+  color: #00d1c2;
+  font-size: 14px;
+}
+
+.gallery-header h2 {
+  margin-top: 8px;
+}
+
+.medical-gallery-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.medical-gallery-images .gallery-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.medical-gallery-images .gallery-img img {
+  width: 100%;
+}
+
+.gallery-text-overlay {
+  position: relative;
+}
+
+.medical-gallery-images .gallery-text-overlay .overlay-text {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #0642a2dc;
+  padding: 20px;
+  /* z-index: 88800; */
+}
+
+.medical-gallery-images .overlay-text p {
+  font-size: 13px;
+  color: #fff;
+}
+
+.medical-gallery-images .overlay-text h4 {
+  color: #fff;
+  margin-top: 8px;
+}
+
+.medical-gallery-images .overlay-text-btn {
+  outline: none;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  background-color: #00d1c2;
+  bottom: 0;
+  right: 0;
+}
+/* End medical gallery header */
+
+/* Start faq section */
+.faq-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  min-height: 350px;
+  margin-top: 50px;
+  /* max-height: 400px; */
+}
+
+.faq-inner-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-left {
+  width: 100%;
+}
+
+.faq-right {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: stretch;
+}
+
+.faq-right img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.faq-accordion {
+  /* background-color: orange; */
+  margin-top: 20px;
+}
+
+.faq-accordion .btn {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 6px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px rgba(235, 235, 235, 0.5);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.faq-accordion .btn:hover {
+  background-color: #00d1c2;
+  color: #fff;
+}
+
+/* .accordion-collapse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+} */
+
+.details {
+  height: 0px;
+  overflow: hidden;
+  padding: 0 10px;
+  font-size: 14px;
+}
+/* End faq section */
+
+@media screen and (min-width: 576px) {
+  .header {
+    position: absolute;
+    /* right: 0; */
+  }
+
+  .hero-img {
+    min-height: 350px;
+  }
+
+  .booking {
+    margin-top: -60px;
+    z-index: 99999;
+    position: relative;
+  }
+
+  .inner-booking-section {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  .request-appointment h3 {
+    font-size: 14px;
+  }
+
+  .request-appointment a {
+    font-size: 12px;
+  }
+
+  .booking-left-img {
+    width: 40%;
+  }
+
+  /* Medica card container */
+  .medical-card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 49%;
+  }
+
+  /* Start work section */
+  .work-four-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* End choose us section */
+
+  /* Start Performance section */
+  .performance-card {
+    width: 32%;
+  }
+  /* End work section */
+
+  /* Start team member section */
+  .team-member-container {
+    min-height: 400px;
+  }
+  /* End team member seciton */
+
+  /* Start member identity section */
+  .inner-member-identity {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .member-card {
+    width: 48%;
+  }
+
+  .member-content {
+    padding: 20px;
+  }
+  /* End member identity section */
+
+  /* Start Medical gallery images */
+  .medical-gallery-images .gallery-img {
+    width: 48%;
+  }
+  /* End Medical gallery images */
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: absolute;
+    /* right: 0; */
+  }
+
+  .logo img {
+    min-width: 100px;
+  }
+
+  .hero-img {
+    min-height: 420px;
+  }
+
+  .hero-img-content h1 {
+    font-size: 36px;
+  }
+
+  .inner-booking-section {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .booking-left-img {
+    width: 50%;
+  }
+
+  .request-appointment a {
+    font-size: 15px;
+  }
+
+  /* Medical care section */
+  .medical-care {
+    margin-top: 50px;
+  }
+
+  /* Start About us section */
+  .about-us-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    background-color: #f3fafa;
+  }
+
+  .about-us-img {
+    width: 50%;
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .about-us-img img:nth-child(1) {
+    object-fit: cover;
+  }
+
+  .about-us-img img:nth-child(2) {
+    max-width: 200px;
+  }
+
+  .about-us-content {
+    width: 50%;
+    padding: 30px 0;
+    margin-left: 30px;
+  }
+
+  .about-us-content p {
+    width: 80%;
+  }
+
+  .about-us-quote {
+    width: 80%;
+  }
+
+  .more-about button {
+    padding: 16px 28px;
+  }
+  /* End About us section */
+
+  /* Start choose us section */
+  .inner-section-choose-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .choose-us-heading {
+    width: 50%;
+  }
+
+  .choose-us-descr {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .more-choose {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .more-choose-left {
+    width: 48%;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .more-choose-left img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .more-choose-right {
+    width: 48%;
+    padding: 30px 0;
+  }
+
+  /* Start performance section */
+  .performance-card {
+    width: 24%;
+    margin-bottom: 0;
+  }
+  /* End performance section */
+
+  /* Start team member section */
+  .team-member-container {
+    min-height: 450px;
+  }
+  /* End team member section */
+
+  /* Start medical gallery images */
+  .medical-gallery-images .gallery-img {
+    width: 32%;
+  }
+  /* End medical gallery images */
+
+  /* Start faq section */
+  .faq-inner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-left {
+    width: 48%;
+    padding: 30px;
+  }
+
+  .faq-inner-container .faq-title {
+    font-size: 40px;
+  }
+
+  .faq-right {
+    display: flex;
+    align-items: stretch;
+    width: 48%;
+  }
+
+  .faq-right img {
+    width: 100%;
+  }
+  /* End faq section */
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+  }
+  .top-header {
+    padding: 0;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .login-register {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .top-header-right {
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .inner-navigation-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1280px;
+  }
+
+  .inner-top-header {
+    width: 1280px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    /* background-color: yellow; */
+    align-items: center;
+  }
+
+  .top-header-left {
+    flex-direction: row;
+  }
+
+  .top-header {
+    padding: 10px 15px;
+    order: 1;
+  }
+
+  .navigation-menu {
+    order: 2;
+    background-color: transparent;
+  }
+
+  .nav-menu ul {
+    flex-direction: row;
+  }
+
+  .nav-menu ul li a {
+    color: #000;
+  }
+
+  .mobile-menu {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .nav-menu ul {
+    display: flex;
+  }
+
+  .search-appointment {
+    margin-top: 0;
+  }
+
+  .search-appointment > button {
+    color: #000;
+  }
+
+  .appointment-btn {
+    padding: 15px 22px;
+    font-weight: 600;
+  }
+
+  /* START Hero image style */
+  .hero-img {
+    min-height: 500px;
+    padding-left: 40px;
+  }
+  .hero-img-content h1 {
+    font-size: 45px;
+  }
+
+  .hero-img-content button {
+    margin: 15px 0 30px;
+  }
+
+  .icon-booking {
+    padding: 20px;
+  }
+
+  .request-appointment h3 {
+    font-size: 24px;
+  }
+
+  /* Medical care section */
+  .medical-care {
+    margin-top: 60px;
+  }
+  .medical-care-title {
+    font-size: 36px;
+  }
+
+  /* Start work section */
+  .work-card {
+    width: 32%;
+  }
+  /* End work section */
+
+  /* Start team member section */
+  .team-member-container {
+    min-height: 500px;
+  }
+  /* End team member section */
+
+  /* Start member identity section */
+  .member-card {
+    width: 32%;
+  }
+  /* End member identity section */
+
+  /* Start medical gallery images */
+  .medical-gallery-container {
+    padding: 30px;
+  }
+  .medical-gallery-images .gallery-img {
+    width: 24%;
+  }
+  /* End medical gallery images */
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-img {
+    min-height: 600px;
+    /* padding-left: 80px; */
+    justify-content: center;
+  }
+
+  .hero-img-content {
+    width: 1140px;
+  }
+
+  .hero-img-content h1 {
+    font-size: 54px;
+  }
+
+  .hero-img-content p {
+    font-size: 18px;
+  }
+
+  /* Booking section */
+  .booking {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .inner-booking-section {
+    width: 1140px;
+  }
+
+  /* Medical care section */
+  .medical-care {
+    margin-top: 80px;
+  }
+
+  .card {
+    width: 32%;
+  }
+
+  .inner-medical-care {
+    /* background-color: yellow; */
+    width: 1140px;
+  }
+
+  .medical-care-subtitle {
+    font-size: 18px;
+  }
+
+  /* Start work section */
+  .work-inner-section {
+    width: 1140px;
+    /* background-color: red; */
+  }
+  /* End work section */
+
+  /* Start work section */
+
+  .work-container {
+    padding: 50px 0;
+  }
+
+  .work-card {
+    width: 23%;
+  }
+  /* End work section */
+
+  /* Start choose us section */
+  .inner-section-choose-us {
+    width: 1024px;
+  }
+
+  .more-choose {
+    width: 1024px;
+    display: flex;
+    margin-top: 40px;
+    padding: 0;
+  }
+  /* End choose us section */
+
+  /* Start Performance section */
+  .performance-container {
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .inner-performance-section {
+    width: 1024px;
+  }
+  /* End performance section */
+
+  /* Start Team member section */
+  .team-member-container {
+    min-height: 600px;
+  }
+  /* End team member section */
+
+  /* Start team member section */
+  .member-identity-container {
+    padding: 0;
+    margin-top: -150px;
+  }
+  .inner-member-identity {
+    width: 1024px;
+  }
+  /* End team member section */
+
+  /* Start Medical gallery container */
+  .medical-gallery-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .medical-card-container .inner-medical-gallery {
+    width: 1140px;
+    background-color: red;
+  }
+  /* End medical gallery container */
+
+  /* Start faq section */
+  .faq.container {
+    max-height: 450px;
+    background-color: blue;
+  }
+  .faq-inner-container {
+    width: 1024px;
+    /* max-height: 450px; */
+  }
+
+  .faq-right {
+    max-height: 450px;
+  }
+  /* End faq section */
+}
